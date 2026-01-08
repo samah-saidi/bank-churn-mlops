@@ -1,0 +1,332 @@
+{
+  "id": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/containerapps/bank-churn",
+  "identity": {
+    "type": "None"
+  },
+  "location": "France Central",
+  "name": "bank-churn",
+  "properties": {
+    "configuration": {
+      "activeRevisionsMode": "Single",
+      "dapr": null,
+      "identitySettings": [],
+      "ingress": {
+        "additionalPortMappings": null,
+        "allowInsecure": false,
+        "clientCertificateMode": null,
+        "corsPolicy": null,
+        "customDomains": null,
+        "exposedPort": 0,
+        "external": true,
+        "fqdn": "bank-churn.whiteglacier-da6281db.francecentral.azurecontainerapps.io",
+        "ipSecurityRestrictions": null,
+        "stickySessions": null,
+        "targetPort": 8000,
+        "targetPortHttpScheme": null,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "weight": 100
+          }
+        ],
+        "transport": "Auto"
+      },
+      "maxInactiveRevisions": 100,
+      "registries": [
+        {
+          "identity": "",
+          "passwordSecretRef": "mlopssamahazurecrio-mlopssamah",
+          "server": "mlopssamah.azurecr.io",
+          "username": "mlopssamah"
+        }
+      ],
+      "revisionTransitionThreshold": null,
+      "runtime": null,
+      "secrets": [
+        {
+          "name": "mlopssamahazurecrio-mlopssamah"
+        }
+      ],
+      "service": null,
+      "targetLabel": ""
+    },
+    "customDomainVerificationId": "DDDC7F8DAA1727628E7501BB42FD527E95891B59B919C4C607E16E8C33137BFA",
+    "delegatedIdentities": [],
+    "environmentId": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/managedEnvironments/env-mlops-workshop",
+    "eventStreamEndpoint": "https://francecentral.azurecontainerapps.dev/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/containerApps/bank-churn/eventstream",
+    "latestReadyRevisionName": "bank-churn--e8d6c71",
+    "latestRevisionFqdn": "bank-churn--e8d6c71.whiteglacier-da6281db.francecentral.azurecontainerapps.io",
+    "latestRevisionName": "bank-churn--e8d6c71",
+    "managedEnvironmentId": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/managedEnvironments/env-mlops-workshop",
+    "outboundIpAddresses": [
+      "20.74.16.183",
+      "20.74.94.128",
+      "20.19.239.83",
+      "172.189.12.75",
+      "172.189.174.219",
+      "4.178.216.19",
+      "172.189.173.164",
+      "20.74.94.150",
+      "20.74.93.40",
+      "98.66.249.192",
+      "98.66.250.10",
+      "98.66.248.181",
+      "98.66.249.135",
+      "98.66.248.214",
+      "98.66.250.141",
+      "20.216.216.188",
+      "20.216.216.219",
+      "172.189.12.72",
+      "20.19.223.96",
+      "20.19.220.136",
+      "20.19.221.135",
+      "4.233.16.221",
+      "20.216.217.5",
+      "20.216.216.182",
+      "98.66.242.126",
+      "98.66.242.144",
+      "98.66.242.209",
+      "98.66.242.230",
+      "98.66.242.239",
+      "98.66.242.232",
+      "20.40.148.255",
+      "4.211.69.69",
+      "4.251.202.168",
+      "4.251.186.182",
+      "4.178.14.42",
+      "4.251.138.82",
+      "172.189.13.56",
+      "4.211.69.75",
+      "172.189.46.179",
+      "20.216.196.172",
+      "4.211.68.10"
+    ],
+    "patchingMode": "Automatic",
+    "provisioningState": "Succeeded",
+    "runningStatus": "Running",
+    "template": {
+      "containers": [
+        {
+          "image": "mlopssamah.azurecr.io/bank-churn-api:v1",
+          "imageType": "ContainerImage",
+          "name": "bank-churn",
+          "resources": {
+            "cpu": 0.5,
+            "ephemeralStorage": "2Gi",
+            "memory": "1Gi"
+          }
+        }
+      ],
+      "initContainers": null,
+      "revisionSuffix": "",
+      "scale": {
+        "cooldownPeriod": 300,
+        "maxReplicas": 1,
+        "minReplicas": 1,
+        "pollingInterval": 30,
+        "rules": null
+      },
+      "serviceBinds": null,
+      "terminationGracePeriodSeconds": null,
+      "volumes": null
+    },
+    "workloadProfileName": "Consumption"
+  },
+  "resourceGroup": "rg-mlops-bank-churn",
+  "systemData": {
+    "createdAt": "2026-01-06T23:52:44.5198404",
+    "createdBy": "samah.saidi@polytechnicien.tn",
+    "createdByType": "User",
+    "lastModifiedAt": "2026-01-07T01:49:03.9488844",
+    "lastModifiedBy": "samah.saidi@polytechnicien.tn",
+    "lastModifiedByType": "User"
+  },
+  "type": "Microsoft.App/containerApps"
+}
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+
+==========================================
+🚀 DÉPLOIEMENT RÉUSSI
+==========================================
+ACR : mlopssamah
+Région : francecentral
+URL API : https://bank-churn.whiteglacier-da6281db.francecentral.azurecontainerapps.io
+Santé : https://bank-churn.whiteglacier-da6281db.francecentral.azurecontainerapps.io/health
+Docs : https://bank-churn.whiteglacier-da6281db.francecentral.azurecontainerapps.io/docs
+
+🧹 Nettoyage : az group delete -n rg-mlops-bank-churn --yes --no-wait
+==========================================
+
+
+
+
+
+
+
+
+
+
+**************************************
+****************************************
+
+
+Container app created. Access your app at https://bank-churn.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io/
+
+{
+  "id": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/containerapps/bank-churn",
+  "identity": {
+    "type": "None"
+  },
+  "location": "France Central",
+  "name": "bank-churn",
+  "properties": {
+    "configuration": {
+      "activeRevisionsMode": "Single",
+      "dapr": null,
+      "identitySettings": [],
+      "ingress": {
+        "additionalPortMappings": null,
+        "allowInsecure": false,
+        "clientCertificateMode": null,
+        "corsPolicy": null,
+        "customDomains": null,
+        "exposedPort": 0,
+        "external": true,
+        "fqdn": "bank-churn.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io",
+        "ipSecurityRestrictions": null,
+        "stickySessions": null,
+        "targetPort": 8000,
+        "targetPortHttpScheme": null,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "weight": 100
+          }
+        ],
+        "transport": "Auto"
+      },
+      "maxInactiveRevisions": 100,
+      "registries": [
+        {
+          "identity": "",
+          "passwordSecretRef": "mlopssamahazurecrio-mlopssamah",
+          "server": "mlopssamah.azurecr.io",
+          "username": "mlopssamah"
+        }
+      ],
+      "revisionTransitionThreshold": null,
+      "runtime": null,
+      "secrets": [
+        {
+          "name": "mlopssamahazurecrio-mlopssamah"
+        }
+      ],
+      "service": null,
+      "targetLabel": ""
+    },
+    "customDomainVerificationId": "DDDC7F8DAA1727628E7501BB42FD527E95891B59B919C4C607E16E8C33137BFA",
+    "delegatedIdentities": [],
+    "environmentId": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/managedEnvironments/env-mlops-workshop",
+    "eventStreamEndpoint": "https://francecentral.azurecontainerapps.dev/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/containerApps/bank-churn/eventstream",
+    "latestReadyRevisionName": "bank-churn--3v5kccy",
+    "latestRevisionFqdn": "bank-churn--3v5kccy.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io",
+    "latestRevisionName": "bank-churn--3v5kccy",
+    "managedEnvironmentId": "/subscriptions/0cca89e7-2606-49a1-b975-8cfc606a0c9f/resourceGroups/rg-mlops-bank-churn/providers/Microsoft.App/managedEnvironments/env-mlops-workshop",
+    "outboundIpAddresses": [
+      "20.74.16.183",
+      "20.74.94.128",
+      "20.19.239.83",
+      "172.189.12.75",
+      "172.189.174.219",
+      "4.178.216.19",
+      "172.189.173.164",
+      "20.74.94.150",
+      "20.74.93.40",
+      "98.66.249.192",
+      "98.66.250.10",
+      "98.66.248.181",
+      "98.66.249.135",
+      "98.66.248.214",
+      "98.66.250.141",
+      "20.216.216.188",
+      "20.216.216.219",
+      "172.189.12.72",
+      "20.19.223.96",
+      "20.19.220.136",
+      "20.19.221.135",
+      "4.233.16.221",
+      "20.216.217.5",
+      "20.216.216.182",
+      "98.66.242.126",
+      "98.66.242.144",
+      "98.66.242.209",
+      "98.66.242.230",
+      "98.66.242.239",
+      "98.66.242.232",
+      "20.40.148.255",
+      "4.211.69.69",
+      "4.251.202.168",
+      "4.251.186.182",
+      "4.178.14.42",
+      "4.251.138.82",
+      "172.189.13.56",
+      "4.211.69.75",
+      "172.189.46.179",
+      "20.216.196.172",
+      "20.216.199.181"
+    ],
+    "patchingMode": "Automatic",
+    "provisioningState": "Succeeded",
+    "runningStatus": "Running",
+    "template": {
+      "containers": [
+        {
+          "image": "mlopssamah.azurecr.io/bank-churn-api:v1",
+          "imageType": "ContainerImage",
+          "name": "bank-churn",
+          "resources": {
+            "cpu": 0.5,
+            "ephemeralStorage": "2Gi",
+            "memory": "1Gi"
+          }
+        }
+      ],
+      "initContainers": null,
+      "revisionSuffix": "",
+      "scale": {
+        "cooldownPeriod": 300,
+        "maxReplicas": 3,
+        "minReplicas": 1,
+        "pollingInterval": 30,
+        "rules": null
+      },
+      "serviceBinds": null,
+      "terminationGracePeriodSeconds": null,
+      "volumes": null
+    },
+    "workloadProfileName": "Consumption"
+  },
+  "resourceGroup": "rg-mlops-bank-churn",
+  "systemData": {
+    "createdAt": "2026-01-07T03:12:33.3020426",
+    "createdBy": "samah.saidi@polytechnicien.tn",
+    "createdByType": "User",
+    "lastModifiedAt": "2026-01-07T03:12:33.3020426",
+    "lastModifiedBy": "samah.saidi@polytechnicien.tn",
+    "lastModifiedByType": "User"
+  },
+  "type": "Microsoft.App/containerApps"
+}
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+
+==========================================
+🚀 DÉPLOIEMENT RÉUSSI
+==========================================
+ACR : mlopssamah
+Région : francecentral
+URL API : https://bank-churn.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io
+Santé : https://bank-churn.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io/health
+Docs : https://bank-churn.wonderfulbay-3cddb905.francecentral.azurecontainerapps.io/docs
+
+🧹 Nettoyage : az group delete -n rg-mlops-bank-churn --yes --no-wait
+==========================================

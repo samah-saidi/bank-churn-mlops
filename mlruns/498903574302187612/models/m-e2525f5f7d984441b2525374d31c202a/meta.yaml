@@ -1,0 +1,10 @@
+artifact_location: file:D:/Deploiement/bank-churn-mlops/mlruns/498903574302187612/models/m-e2525f5f7d984441b2525374d31c202a/artifacts
+creation_timestamp: 1765398980449
+experiment_id: '498903574302187612'
+last_updated_timestamp: 1765398984796
+model_id: m-e2525f5f7d984441b2525374d31c202a
+model_type: null
+name: model
+source_run_id: 9f6411d79b4848ce8b624b7b66bac7e9
+status: 2
+status_message: null

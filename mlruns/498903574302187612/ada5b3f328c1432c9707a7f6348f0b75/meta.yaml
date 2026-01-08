@@ -1,0 +1,15 @@
+artifact_uri: file:D:/Deploiement/bank-churn-mlops/mlruns/498903574302187612/ada5b3f328c1432c9707a7f6348f0b75/artifacts
+end_time: 1767735619579
+entry_point_name: ''
+experiment_id: '498903574302187612'
+lifecycle_stage: active
+run_id: ada5b3f328c1432c9707a7f6348f0b75
+run_name: random-forest-v1
+run_uuid: ada5b3f328c1432c9707a7f6348f0b75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767735612487
+status: 3
+tags: []
+user_id: Samah

@@ -1,0 +1,22 @@
+artifact_path: file:D:/Deploiement/bank-churn-mlops/mlruns/498903574302187612/models/m-e2525f5f7d984441b2525374d31c202a/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.7.0
+model_id: m-e2525f5f7d984441b2525374d31c202a
+model_size_bytes: 4573597
+model_uuid: m-e2525f5f7d984441b2525374d31c202a
+prompts: null
+run_id: 9f6411d79b4848ce8b624b7b66bac7e9
+utc_time_created: '2025-12-10 20:36:20.515734'
